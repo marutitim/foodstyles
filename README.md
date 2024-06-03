@@ -1,4 +1,4 @@
-# Foodstyles API Integration
+# Foodstyles API 
 
 This project is a RESTful and GraphQL API integration for Foodstyles.At the moment this Solution is just a basic implimentation. I have omitted the API authentication,caching, throttling and use of Docker to improve speed as well as to provide versertility but stay tuned for next update.
 
@@ -98,4 +98,4 @@ query {
 
 ## Support
 
-For any additional information, questions, or feedback, please raise an issue on [GitHub] (https://github.com/marutitim/foodstyles.git) or contact us via our handle. We highly appreciate your participation!
+For any additional information, questions, or feedback, please raise an issue on [GitHub] (https://github.com/marutitim/foodstyles.git) Thank you!
