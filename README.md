@@ -91,7 +91,7 @@ query {
     }
   }
 }
-
+```
 ## Live Demo
 
 [Live Demo] (http://54.210.65.18:3001/graphql?query=query%20%7B%0A%20%20extractEntities(searchTerm%3A%20%22vegan%20sushi%20in%20London%22)%20%7B%0A%20%20%20diet%7B%0A%20%20%20%20id%2C%0A%20%20%20%20name%0A%20%20%7D%0A%20%20%20dishType%7B%0A%20%20%20%20id%2C%0A%20%20%20%20name%0A%20%20%7D%0A%20%7D%0A%7D%0A)
