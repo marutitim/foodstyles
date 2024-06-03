@@ -43,10 +43,26 @@ This project is a RESTful and GraphQL API integration for Foodstyles.At the mome
     npm start
     ```
 
-6. **Access the API:**
+6. **Access the API locally assuming you used port 3001:**
 
     - GraphQL endpoint: [http://localhost:3001/graphql](http://localhost:3001/graphql)
     - REST endpoints: [http://localhost:3001/users](http://localhost:3001/users)
+
+7. **(Optional) PM2 configuration settings**
+   - there is a file in the root called ecosystem.config, where you can make changes if you like.
+   - If you have pm2 installed, run the following:
+
+    development:
+
+    ```sh
+   pm2 start ecosystem.config.js --env development
+   ```
+
+    production:
+
+    ```sh
+   pm2 start ecosystem.config.js --env production
+   ```
 
 ## Usage
 
@@ -76,6 +92,10 @@ query {
   }
 }
 
+## Live Demo
+
+[Live Demo] (http://54.210.65.18:3001/graphql?query=query%20%7B%0A%20%20extractEntities(searchTerm%3A%20%22vegan%20sushi%20in%20London%22)%20%7B%0A%20%20%20diet%7B%0A%20%20%20%20id%2C%0A%20%20%20%20name%0A%20%20%7D%0A%20%20%20dishType%7B%0A%20%20%20%20id%2C%0A%20%20%20%20name%0A%20%20%7D%0A%20%7D%0A%7D%0A)
+
 ## Support
 
-For any additional information, questions, or feedback, please raise an issue on [GitHub](https://github.com/marutitim/foodstyles.git) or contact us via our handle. We highly appreciate your participation!
+For any additional information, questions, or feedback, please raise an issue on [GitHub] (https://github.com/marutitim/foodstyles.git) or contact us via our handle. We highly appreciate your participation!
