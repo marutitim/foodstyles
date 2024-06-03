@@ -4,7 +4,7 @@ const { Op } = require('sequelize');
 const { Brand, City, Diet, DishType } = require('./models');
 const { graphqlHTTP } = require('express-graphql');
 
-// Define GraphQL schema
+//  The GraphQL schema
 const schema = buildSchema(`
   type Brand {
     id: Int
@@ -38,7 +38,7 @@ const schema = buildSchema(`
   }
 `);
 
-// Define resolvers
+// The resolvers
 const root = {
   extractEntities: async ({ searchTerm }) => {
     const terms = searchTerm.split(' ');
@@ -99,6 +99,8 @@ const root = {
     };
 
     await generateCombinations(0, {});
+
+    combinations = combinations.filter(combination => Object.values(combination).every(value => value !== null));
 
     return combinations;
   }
